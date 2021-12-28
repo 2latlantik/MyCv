@@ -1,0 +1,227 @@
+{% extends "layout.twig" %}
+{% block title %}Nicolas Coudenne - Développeur Back PHP {% endblock %}
+{% block body %}
+    <div class="h1_container hello my-4">
+        <h1>COUDENNE Nicolas<br>Développeur Web </h1>
+    </div>
+    <div class="row">
+        <div class="cv__resume px-4 col-xs-12 col-sm-12 col-md-3">
+            <div class="row cv__photo_and_skills">
+                <div class="col-xs-12 col-sm-4 col-md-12">
+                    <div class="cv__photo">
+                       <img src="build/static/assets/profil.jpg" width="200" alt="photo de profil">
+                       <ul>
+                            <li>41 ans</li>
+                            <li>Sainte Geneviève Des Bois</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cv__skill col-xs-12 col-sm-8 col-md-12">
+                    <span class="cv__badge">Symfony</span>
+                    <span class="cv__badge">PHP</span>
+                    <span class="cv__badge">MySQL</span>
+                    <span class="cv__badge">HTML5</span>
+                    <span class="cv__badge">CSS3</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cv__title">Contact</div>
+            </div>
+            <div class="row mb-3">
+                    <div class="col cv__contact__method mail" data-toggle="popover" data-placement="bottom" title="Mail" data-content="nicolascoudenne@gmail.com">
+                        <i class="far fa-envelope-open" aria-hidden="true"></i>
+                    </div>
+                    <div class="col cv__contact__method mobile" data-toggle="popover" data-placement="bottom" title="Mobile" data-content="06.15.47.63.81">
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                    </div>
+                    <div class="col cv__contact__method viadeo" data-toggle="popover" data-placement="bottom" title="Profil Viadeo" data-content="fr.viadeo.com/fr/profile/nicolas.coudenne">
+                        <i class="fab fa-viadeo" aria-hidden="true"></i>
+                    </div>
+                    <div class="col cv__contact__method linkedin" data-toggle="popover" data-placement="bottom" title="Profil Linkedin" data-content="fr.linkedin.com/in/nicolas-coudenne-132b06b5">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="cv__title">Situation</div>
+            </div>
+            <div class="row mb-3">
+                <div class="cv__pro_situation_state cv__pro_situation_state_first">Salarié</div>
+                <div class="cv__pro_situation_state"><span class="point_ok"></span>Ouvert aux opportunités</div>
+            </div>
+            <div class="row">
+                <div class="cv__title">Présentation</div>
+            </div>
+            <div class="row mb-3">
+                <div class="cv__presentation__body"><p>Mes études qui m'ont ouvert à diverses connaissances et compétences ont forgé mon goût d'apprendre, mes capacités à tenir des raisonnements et résoudre des problématiques diverses.</p><p>En fin de mon cursus scolaire et depuis la fin de mes études, je me suis lancé dans le développement web en autodidacte et j'ai toujours conservé le plaisir d'apprendre en autonomie et échanger avec des collaborateurs sur les technologies web.</p><p>Aujourd'hui, je développe mes connaissances sur la version 4 du framework Symfony au travers d'un projet personnel (<a href="http://www.my-profile.fr" target="_blank">my-profile.fr</a>).</p></div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 px-4">
+            <h2 class="my-3"><i class="fa fa-briefcase" aria-hidden="true"></i>Expériences professionnelles</h2>
+            <div class="cv__experience">
+                <div class="cv__experience_section">
+                    <h4>Développeur Symfony</h4>
+                    <div class="cv__experience_detail_company">Dometech</div>
+                    <div class="cv__experience_detail_duration">Depuis septembre 2013</div>
+                    <ul class="cv__ul">
+                        <li>Développement de modules pour un <strong>logiciel de comptabilité et de gestion</strong> destiné aux professionnels de l'immobilier en gestion locative et gestion de copropriétés</li>
+                        <li>Ces modules ont été développés en utilisant le framework <strong>Symfony</strong> et l'ORM <strong>Doctrine</strong></li>
+                    </ul>
+                </div>
+                <div class="cv__experience_section">
+                    <h4>Développeur web et responsable informatique </h4>
+                    <div class="cv__experience_detail_company">ECPIM</div>
+                    <div class="cv__experience_detail_duration">De janvier 2012 à août 2013</div>
+                    <ul class="cv__ul">
+                        <li>Conception et développement d'un <strong>logiciel de comptabilité et de gestion</strong> destiné aux gérants de copropriétés</li>
+                        <li>Modélisation de la base de données avec MySQL Workbench et développement en <strong>HTML/CSS/Jquery</strong> et <strong>PHP/MySQL</strong></li>
+                        <li>Formation d'apprentis en développement sur des cycles DEUG ou licence</li>
+                    </ul>
+                </div>
+                <div class="cv__experience_section">
+                    <h4>Développeur FullStack</h4>
+                    <div class="cv__experience_detail_company">Oxalis</div>
+                    <div class="cv__experience_detail_duration">De octobre 2004 à décembre 2011</div>
+                    <ul class="cv__ul">
+                        <li>Conception et développement d'un <strong>logiciel d'épargne salariale</strong> avec notamment des applications de calcul de prime de participation et d'intéressement pour les salariés et d'une tenue de leur comptes d'épargne salariale sur des supports financiers. </li>
+                        <li>Conception et développement d'un <strong>logiciel complet de comptabilité d'entreprises</strong> à destination d'une société d'expertise comptable. </li>
+                        <li>Assistance telephonique auprès des utilisateurs des logiciels</li>
+                        <li>Ces modules ont été développés avec les technologies <strong>HTML/CSS/Javascript</strong> et <strong>PHP/MySQL</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i>Cursus scolaire</h2>
+            <div class="cv__study">
+                <div class="cv__study_section">
+                    <h4>Maitrise <abbr title="Génie électrique et informatique industrielle">GEII</abbr></h4>
+                    <div>Ingénieur maître (mention bien)</div>
+                    <div>IUP Evry val d'Essonne </div>
+                </div>
+                <div class="cv__study_section">
+                    <h4>BTS <abbr title="Génie électrique et informatique industrielle">GEII</abbr></h4>
+                    <div>Mention bien</div>
+                    <div>Lycée Léonard de Vinci - Saint Michel Sur Orge</div>
+                </div>
+                <div class="cv__study_section">
+                    <h4>BAC <abbr title="Science et technique industrielle">STI</abbr> électrotechnique</h4>
+                    <div>Mention bien</div>
+                    <div>Lycée Léonard de Vinci - Saint Michel Sur Orge</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 px-4">
+            <h2 class="my-3"><i class="fa fa-tasks" aria-hidden="true"></i>Compétences</h2>
+            <div class="cv__skills">
+                <div class="cv__skills_section">
+                    <h4>BackEnd et outils</h4>
+                    <ul class="cv__ul cv__ul_skills list-group">
+                        <li>
+                            <div class="cv__ul_label">PHP 5/7</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                 </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cv__ul_label">Symfony</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                                </div>
+                            </div></li>
+
+                        <li>
+                            <div class="cv__ul_label">Composer</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cv__ul_label">Git/Github</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cv__skills_section">
+                    <h4>FrontEnd</h4>
+                    <ul class="cv__ul cv__ul_skills">
+                        <li>
+                            <div class="cv__ul_label">HTML5</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cv__ul_label">CSS2/3</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cv__ul_label">TWIG</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cv__ul_label">Javascript (Jquery, VueJs)</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cv__skills_section">
+                    <h4>Base de données</h4>
+                    <ul class="cv__ul cv__ul_skills">
+                        <li>
+                            <div class="cv__ul_label">Mysql</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cv__ul_label">Doctrine</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                </div>
+                            </div></li>
+                        <li>
+                            <div class="cv__ul_label">PhpMyAdmin</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cv__skills_section">
+                    <h4>Logiciels</h4>
+                    <ul class="cv__ul">
+                        <li>IDE et éditeurs : PHPStorm, Netbeans, VsCode </li>
+                        <li>Client FTP : FileZilla</li>
+                        <li>Bureautique : Word, Excel, PowerPoint</li>
+                    </ul>
+                </div>
+            </div>
+            <h2><i class="fa fa-rocket" aria-hidden="true"></i>Loisirs</h2>
+            <div class="cv__hobbies">
+                <div class="cv__hobbies_section">
+                    <ul class="cv__ul cv__ul_hobbies">
+                        <li>Développeur et rédacteur du site <a href="http://www.bebemerveilleux.fr" target="_blank">bebemerveilleux.fr</a></li>
+                        <li>Pratique du HandBall</li>
+                        <li>Jeux en ligne (MMO)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

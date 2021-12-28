@@ -1,0 +1,276 @@
+$progress-height: 2rem;
+
+@import "~bootstrap/scss/bootstrap";
+
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+
+html {
+    font-size: 62.5%;
+}
+/* 1rem vaut 10px */
+body {
+    font-size: 1.4rem;
+    background-color:#0C1B88;
+    background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 0.2rem, transparent 4rem),
+    radial-gradient(white, rgba(255,255,255,.15) 0.1rem, transparent 3rem),
+    radial-gradient(white, rgba(255,255,255,.1) 0.2rem, transparent 4rem),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 0.2rem, transparent 3rem);
+    background-size: 55rem 55rem, 35rem 35rem, 25rem 25rem, 15rem 15rem; 
+    background-position: 0 0, 4rem 6rem, 13rem 27rem, 7rem 10rem;
+} 
+
+h1 {
+    line-height: 4.5rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+}
+
+.h1_container {
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#8191ff), to(#4e65ff));
+    background-image: -webkit-linear-gradient(top, #8191ff, 0%, #4e65ff, 100%);
+    background-image: -moz-linear-gradient(top, #8191ff 0%, #4e65ff 100%);
+    background-image: linear-gradient(to bottom, #8191ff 0%, #4e65ff 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8191ff', endColorstr='#ff4e65ff', GradientType=0);
+
+    /*box styles*/
+    width: 40rem;
+    margin: 2rem auto;
+
+    /*shadow*/
+    -webkit-box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, .3);
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, .3);
+
+    /*corners*/
+    -webkit-border-radius: 2.5rem;
+    -moz-border-radius: 2.5rem;
+    border-radius: 2.5rem;
+}
+
+@media (max-width: 450px) {
+  .h1_container {
+    width: 100%;
+  }
+}
+
+.wrapper {
+    max-width: 120rem;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #E0FFFF;
+}
+
+.cv__photo_and_skills {
+    margin: 2rem 0;
+}
+
+.cv__photo {
+    text-align: center;
+    position: relative;
+    width:20rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cv__photo ul {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: rgba(200,200,200, 0.5);
+}
+
+.cv__photo ul li {
+    margin: 0;
+    padding: 0 1rem;
+    list-style-type: none;
+    text-align: left;
+    color: #fff;
+}
+
+.cv__skill {
+    text-align: center;
+}
+
+.cv__skill, .cv__pro_situation, .cv__contact{
+    margin-bottom: 2rem;
+}
+
+.cv__badge{
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #162955;
+    color: #fff;
+    border-radius: 1rem;
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#8191ff), to(#4e65ff));
+    background-image: -webkit-linear-gradient(top, #8191ff, 0%, #4e65ff, 100%);
+    background-image: -moz-linear-gradient(top, #8191ff 0%, #4e65ff 100%);
+    background-image: linear-gradient(to bottom, #8191ff 0%, #4e65ff 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8191ff', endColorstr='#ff4e65ff', GradientType=0);
+}
+
+.cv__title{
+    display: inline-block;
+    width: 100%;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    background-color: #888;
+    color: #fff;
+    vertical-align: middle;
+    padding: 0  1rem;
+    margin-bottom: 0.1rem;
+    letter-spacing:  0.3rem;
+}
+
+.cv__contact__method {
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 3rem;
+    background-color: #DDD;
+    color: #222222;
+    border-right: 0.1rem solid #fff;
+    white-space: nowrap;
+}
+
+.cv__contact__method:hover {
+  background-color: #222;
+  color: #DDD;
+  transition: all 0.7s;
+}
+
+.point_ok{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: green;
+    border-radius: 0.75rem;
+    margin: 0 1rem;
+}
+
+.cv__pro_situation{
+  white-space: nowrap;
+}
+
+.cv__pro_situation_state{
+    background-color: #DDD;
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+.cv__pro_situation_state_first{
+      padding-left: 3.33rem;
+}
+
+.cv__presentation__body {
+    text-align: justify;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+
+/**
+      Partie Experience & Cursus scolaire
+*/
+h2 .fa {
+    margin-right:1rem;
+}
+
+.cv__experience, .cv__study, .cv__skills, .cv__hobbies {
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 0.6rem;
+  box-shadow: 0.2rem 0.2rem 0.1rem rgba(0,0,0,0.5);
+  padding: 1rem;
+}
+
+.cv__experience_detail_company {
+    color: #000;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+.cv__experience_detail_duration {
+    color: #888;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+/**
+      Partie droite
+*/
+.cv__skills_section, .cv__experience_section{
+    margin-bottom: 3rem;
+}
+
+.cv__skills_section h4, .cv__experience_section h4{
+    position: relative;
+    color: #000;
+}
+
+.cv__skills_section h4:after, .cv__experience_section h4:after{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 0;
+    height: 0.2rem;
+    background-color: #3b14af;
+    content: "";
+    transition: width 0.5s;
+}
+
+.cv__skills_section:hover h4, .cv__experience_section:hover h4{
+    padding-left: 0.3rem;
+    transition: padding-left 0.5s;
+}
+.cv__skills_section:hover h4:after, .cv__experience_section:hover h4:after{
+    width: 100%;
+}
+
+
+.cv__ul {
+    padding: 0;
+    list-style-position: inside;
+}
+
+.cv__ul li {
+    margin: 0 0 0 1.5rem;
+    padding: 0;
+    list-style-position: outside;
+}
+
+.cv__ul_skills li {
+    position: relative;
+    margin: 0 0 0.8rem 1.5rem;
+}
+
+.cv__ul_label{
+    margin-right: 9rem;
+}
+
+.cv__ul .progress {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 9rem;
+}
+
