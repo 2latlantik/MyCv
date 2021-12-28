@@ -52,5 +52,12 @@ module.exports = {
     watchOptions: {
         ignored: ['./node_modules/']
     },
-    mode: "development"
+    mode: "development",
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery"
+        })
+    ]
 };
